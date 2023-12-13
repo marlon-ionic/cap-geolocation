@@ -16,5 +16,16 @@
   <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ng-container *ngIf="position">
+      <div class="position">
+        <h4>Coords</h4>
+        <div class="row" *ngFor="let item of position | keyvalue">
+          <span class="key">Key: <b>{{item.key}}</b></span>  <span class="value">Value: <b>{{item.value}}</b></span>
+      </div>
+      </div>
+
+    </ng-container>
+
+
   </div>
 </ion-content>

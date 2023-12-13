@@ -4,6 +4,8 @@
   "author": "Ionic Framework",
   "homepage": "https://ionicframework.com/",
   "scripts": {
+    "run:android": "ng build && npx cap sync && npx cap run android",
+    "run:ios": "ng build && npx cap sync && npx cap run ios",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
